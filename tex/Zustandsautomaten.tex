@@ -43,16 +43,16 @@
 %	ARTICLE INFORMATION
 %----------------------------------------------------------------------------------------
 
-\JournalInfo{Software-Technik-Praktikum} % Journal information
+\JournalInfo{Praxisbericht} % Journal information
 \Archive{Wintersemester 16/17} % Additional notes (e.g. copyright, DOI, review/research article)
 
-\PaperTitle{Implementierung endlicher Zustandsautomaten} % Article title
+\PaperTitle{REST Anwendungsarchitektur} % Article title
 
 \Authors{Max Mustermann} % Authors
 \affiliation{\textit{Hochschule Kaiserslautern}} % Author affiliation
 \affiliation{\textbf{Corresponding author}: max.mustermann@fh-kl.de} % Corresponding author
 
-\Keywords{Endlicher Zustandsautomat, Design, Java} % Keywords - if you don't want any simply remove all the text between the curly brackets
+\Keywords{Web-Entwicklung, RESTful, SOA, JSON, Design, Java} % Keywords - if you don't want any simply remove all the text between the curly brackets
 \newcommand{\keywordname}{Keywords} % Defines the keywords heading name
 
 %----------------------------------------------------------------------------------------
@@ -90,37 +90,102 @@ Auch wenn die Einleitung zu Beginn der Arbeit liegt, wird sie oft erst am Ende v
 
 %------------------------------------------------
 
-\section{Implementierungsvarianten}
-Kurze Einführung in den Abschnitt. Es wird beschrieben was jetzt kommt.
+\section{REST: State of the art}
+Um zu verstehen, weshalb REST allgegenwärtig in der Entwicklung von Web-Applikationen ist, werden im Folgenden die Eigenschaften datiert, welche ein REST Interface spezifiziert. Um weiterhin die Unterschiede, sowie Vor- und Nachteile, zu diskutieren, wird eine Gegenüberstellung mit dem SOAP (\textit{Simple Object Access Protocol}) vorgenommen. 
 
-\subsection{Prozedurale Implementierung}
-Beschreibung des Ansatzes \texttt{switch-case}
+\subsection{Paradigmen und Eigenschaften}
+Die Aufbau aktueller Web-Applikationen beruht auf der Überlegung einer Service orientierten Kommunikation. Aufbauend auf der \textit{Service Oriented Aarchitecture(SOA)} wurde vom W3C die Definition für die noch heute gültige \textit{Web Services Architecture}(vgl. \cite{WSA}) definiert. Hier wird schon REST als Modell für das konstruieren für Web Services angebracht. Um jedoch eine REST-konforme Architektur zu realisieren wurden von Roy Thomas Fielding in seiner Dissertation\cite{Fielding:2000} eine Anzahl von Voraussetzungen definiert, die ein Architekt auf Basis von REST erfüllen muss:
 
+\begin{itemize}
+	\item \textbf{Client-Server:}\\ Der Ansatz der Client-Server Architektur soll verfolgt werden. Durch das Lösen der UI von den Daten der Applikation wird eine Portabilität, Skalierbarkeit und das Vereinfachen der Server-Komponente realisiert, was mittlerweile als Grundlage der kompletten Internet-Architektur gilt, denn der HTTP-Standard selbst beruht auf der REST-Architektur.
+	\item \textbf{Stateless:}\\ Die Zustandslosigkeit gilt für die Kommunikation zwischen Client und Server. Anfragen des Clients müssen alle Information enthalten um vom Server identifiziert und bearbeitet werden zu können. Einen Zustand oder Session-Information liegen somit komplett auf Seiten des Clients.
+	\item \textbf{Cache:}\\ Die Antwort auf eine Client-Anfrage kann vom Server als cacheble oder non-cacheble gelabelt werden. Der Cache befindet sich auf der Client-Seite und erlaubt dem Client die Antwort für weitere Anfragen gleicher Art zu verwenden. Dadurch kann teilweise eine Kommunikation zwischen Client und Server unterbunden werden was die Performanz und Effizienz client-seitig stark erhöhen kann.
+	\item \textbf{Uniform Interface:}\\ Das Uniform Interface repräsentiert das fundamentale Wesen eines REST-Services. Durch die Uniformierung jeder Ressource werden die Daten von der Architektur gelöst, was eine starke Entkopplung sowie Vereinfachung der Interaktion mit sich bringt. Weiterhin soll jeder Client die nötigen Information und Daten erhalten die es ihm erlaubt die Ressource zu identifizieren und dadurch auch zu modifizieren. Die angefragte Ressource muss nicht die selbe Repräsentation auf Server- und Client-Seite besitzen. Objekte vom Server werden also zum Beispiel via XML oder JSON übertragen, enthalten die definierten Daten, müssen aber nicht dem Datentyp des Server-Objekts entsprechen. Nach Fieldings ist hier das \textit{Hypermedia as the engine of application state (HATEOAS)}-Prinzip mit der wichtigste Faktor. Dieses besagt das der Client alle Informationen Ressourcen nur über die definierten URI's beziehen kann. Durch diesen Zugang kann der Server dynamisch Daten kommunizieren und weiter verfügbare Adressen der Antwort hinzufügen. Somit wird verhindert, dass der Client fest codierte Information enthalten muss und somit die Flexibilität des REST-Services entstehen kann.
+	\item \textbf{Layered System:}\\ Dem Client muss nicht bekannt sein, ob die Kommunikation direkt mit dem Server stattfindet oder nicht. Die Anfrage wird gestellt und welcher Server aus einem Kollektiv die Antwort sendet, kann nicht zugeordnet werden. Dadurch können Prinzipien wie Load-Balancing und unterschiedliche Web-Sicherheitskriterien realisiert werden. 
+	\item \textbf{Code on demand(optional):}\\ Dieser Schritt ist optional und beschreibt die Möglichkeit nach Anfrage ausführbaren Code vom Server zum Client zu transferieren, wie zum Beispiel Skripte in JavaScript. Somit kann der Server zeitweise die Funktionalität der Client-Applikation beeinflussen.
+\end{itemize} 
+Im Kontext von Web-Services, welche sich an die REST-Vorgaben binden, wird zumeist die Kommunikation über HTTP umgesetzt. Die API wird über eine Basis-URL angesprochen, über welche dann die benötigten Ressourcen angefragt werden müssen. HTTP bietet eine gewisse Anzahl an Standardmethoden(hauptsächlich: \textit{GET, PUT, POST, DELETE}) die auch für den Datentransfer in einer RESTful-API genutzt werden. Eine mögliche Variante mit den entsprechenden HTTP-Befehlen ist in der Tabelle \ref{tab:httptable} zu sehen.
 
-\subsection{Objektorientierte Implementierung}
-Beschreibung des Ansatzes mit State-Pattern (Klassendiagramm: State, Transitions, Context)
+\begin{table}[hbt]
+	\caption{HTTP Methoden für spezifische URL's}
+	\centering
+	\begin{tabular}{ |p{2cm}|p{6cm}|}
+		\toprule
+		\cmidrule(r){1-2}
+		URL & \textbf{http://api.example.com/resources/item42}\\
+		\midrule
+		GET & Eine Repräsentation des Items42 wird an den Client übertragen\\
+		\midrule
+		PUT & Item42 wird überschrieben oder erstellt wenn noch nicht vorhanden\\
+		\midrule
+		POST & Wird zum Erstellen neuer Ressourcen verwendet, würde in diesem Fall eher nicht genutzt werden\\
+		\midrule
+		DELETE & Das adressierte Element Item42 wird gelöscht\\
+		\bottomrule
+	\end{tabular}\\
+	\label{tab:httptable}
+\end{table}
 
-\subsection{Evaluierung der Implementierungsansätze}
-Beschreibung der Vor- und Nachteile der beiden Ansätze.
+\subsection{REST vs. SOAP}
+Bevor sich REST im Bereich der verteilten Anwendung etablierte war die größte Vertreter für die Kommunikation innerhalb einer SOA das SOAP. Bei SOAP handelt es sich um eine RPC Middleware die HTTP oder SMTP als Transportprotokoll für XML als Nachrichtenformat verwendet. Schon im grundsätzlichen Ansatz unterscheiden sich beide Herangehensweisen. Wird bei REST von einer exakten Uniformierung jeder Ressource gesprochen, die somit auch immer separat angesprochen werden können, so wird bei SOAP mit einem Dispacher gearbeitet. In sogenannten Envelopes werden alle Anfragen an den Server via XML mit dem HTTP-Post-Befehl an den zentralen Dispatcher geleitet. Die Anfrage gehen an eine URL die den Dispatcher adressiert. Im Listing \ref{envelopesoap} ist ein SOAP-Request mit seiner korrespondierenden Response zu sehen. Im Body wird eine \textit{GetStockPrice} Anfrage gestellt für das Unternehmen IBM. Im Body der Antwort wird somit die \textit{GetStockPriceResponse} mit dem Wert von 34,5 übermittelt. 
 
-\section{Anwendungsbeispiele}
-Kurze Einführung in den Abschnitt. Es wird beschrieben was jetzt kommt.
+\begin{lstlisting}[caption=Beispiel: SOAP-Request und SOAP-Response als Envelope, label=envelopesoap]
+ POST /InStock HTTP/1.1
+Host: www.example.org
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: nnn
 
-\subsection{Endlicher Automat für reguläre Ausdrücke}
-Zielsetzung: Prüfung von Strings auf bestimmtes Format, vorgegeben durch regulären Ausdruck der
-durch einen Automaten realisiert ist.
+<?xml version="1.0"?>
 
-\subsubsection{XML-Konfiguration}
-Deklarative Beschreibung des Automaten
+<soap:Envelope
+xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"
+soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
 
-\subsubsection{FSM-Framework}
-Frameworkansatz
+<soap:Body xmlns:m="http://www.example.org/stock">
+<m:GetStockPrice>
+<m:StockName>IBM</m:StockName>
+</m:GetStockPrice>
+</soap:Body>
 
-\subsection{Steuerung einer Digitaluhr}
-Erweiterte Notation mit statecharts. 
-Komplexerer Automat mit "Unterzuständen" und "Parallelzuständen".
-Implementierungsansatz.
+</soap:Envelope>
 
+------------------------------
+
+ HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: nnn
+
+<?xml version="1.0"?>
+
+<soap:Envelope
+xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"
+soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
+
+<soap:Body xmlns:m="http://www.example.org/stock">
+<m:GetStockPriceResponse>
+<m:Price>34.5</m:Price>
+</m:GetStockPriceResponse>
+</soap:Body>
+
+</soap:Envelope>
+\end{lstlisting}
+
+\subsection{Evaluierung}
+Beschreibung vor und Nachteile REST interfaces
+
+\section{Entwicklungsansatz und Aufbau}
+Kurze Einführung in den Abschnitt. Es wird beschrieben was jetzt kommt. Erklärung Beispiel Projekt
+
+\subsection{JAX-RS - die Basis für REST-Services in JAVA}
+Erläuterung der API, Bestandteile, Features 
+
+\subsection{Serverseite Beispielimplementierung}
+Erläuterung der API, Bestandteile, Features 
+
+\subsection{Clientseite Beispielimplementierung}
+Erläuterung der API, Bestandteile, Features 
+
+\section{Frameworks? Microservice-Architektur?}
 
 \section{Zusammenfassung}
 Hier wird nochmal der Inhalt und die Ergebnisse der Arbeit erörtert. Im Ausblick werden Themen und Aufgabenstellungen genannt, die es lohnt weiter zu untersuchen.

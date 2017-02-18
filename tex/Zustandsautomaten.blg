@@ -3,47 +3,51 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Zustandsautomaten.aux
 The style file: unsrt.bst
 Database file #1: Literatur.bib
+Warning--entry type for "Fielding:2000" isn't style-file defined
+--line 56 of file Literatur.bib
 Warning--I didn't find a database entry for "RobertMartinOOMetrics"
 Warning--I didn't find a database entry for "RobertMartinSOLID"
-You've used 4 entries,
+Warning--empty booktitle in WSA
+Warning--empty year in WSA
+You've used 6 entries,
             1791 wiz_defined-function locations,
-            479 strings with 4238 characters,
-and the built_in function-call counts, 939 in all, are:
-= -- 89
-> -- 27
+            490 strings with 4509 characters,
+and the built_in function-call counts, 1217 in all, are:
+= -- 108
+> -- 35
 < -- 1
-+ -- 11
-- -- 7
-* -- 50
-:= -- 141
-add.period$ -- 13
-call.type$ -- 4
-change.case$ -- 2
++ -- 15
+- -- 9
+* -- 57
+:= -- 181
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 50
-empty$ -- 101
-format.name$ -- 7
-if$ -- 220
+cite$ -- 8
+duplicate$ -- 66
+empty$ -- 142
+format.name$ -- 9
+if$ -- 285
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 6
-newline$ -- 23
-num.names$ -- 4
-pop$ -- 20
+int.to.str$ -- 6
+missing$ -- 7
+newline$ -- 32
+num.names$ -- 6
+pop$ -- 35
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 23
+skip$ -- 30
 stack$ -- 0
 substring$ -- 57
-swap$ -- 14
+swap$ -- 16
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 9
-width$ -- 5
-write$ -- 45
-(There were 2 warnings)
+warning$ -- 2
+while$ -- 11
+width$ -- 7
+write$ -- 62
+(There were 5 warnings)

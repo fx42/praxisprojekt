@@ -17,6 +17,16 @@ Jilles~Van Gurp and Jan Bosch.
   Conference Software Engineering and Applications, IASTED/Acta}, pages
   172--178. Press, 1999.
 
+\bibitem{WSA}
+W3C~Working Group.
+\newblock Web services architecture w3c working group note 11 february 2004.
+\newblock W3C.
+
+\bibitem{Fielding:2000}
+Roy~Thomas Fielding.
+\newblock Architectural styles and the design of network-based software
+  architectures, 2000.
+
 \bibitem{Rechenberg}
 Peter Rechenberg.
 \newblock {\em Technisches Schreiben (nicht nur) für Informatiker}.
