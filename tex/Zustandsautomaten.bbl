@@ -27,6 +27,16 @@ Roy~Thomas Fielding.
 \newblock Architectural styles and the design of network-based software
   architectures, 2000.
 
+\bibitem{w3cSOAP}
+W3C~Working Group.
+\newblock Soap version 1.2 part 1: Messaging framework (second edition).
+\newblock W3C.
+
+\bibitem{w3cWSDL}
+W3C~Working Group.
+\newblock Web services description language (wsdl) 1.1.
+\newblock W3C.
+
 \bibitem{Rechenberg}
 Peter Rechenberg.
 \newblock {\em Technisches Schreiben (nicht nur) für Informatiker}.

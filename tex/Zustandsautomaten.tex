@@ -104,21 +104,28 @@ Die Aufbau aktueller Web-Applikationen beruht auf der Überlegung einer Service 
 	\item \textbf{Layered System:}\\ Dem Client muss nicht bekannt sein, ob die Kommunikation direkt mit dem Server stattfindet oder nicht. Die Anfrage wird gestellt und welcher Server aus einem Kollektiv die Antwort sendet, kann nicht zugeordnet werden. Dadurch können Prinzipien wie Load-Balancing und unterschiedliche Web-Sicherheitskriterien realisiert werden. 
 	\item \textbf{Code on demand(optional):}\\ Dieser Schritt ist optional und beschreibt die Möglichkeit nach Anfrage ausführbaren Code vom Server zum Client zu transferieren, wie zum Beispiel Skripte in JavaScript. Somit kann der Server zeitweise die Funktionalität der Client-Applikation beeinflussen.
 \end{itemize} 
-Im Kontext von Web-Services, welche sich an die REST-Vorgaben binden, wird zumeist die Kommunikation über HTTP umgesetzt. Die API wird über eine Basis-URL angesprochen, über welche dann die benötigten Ressourcen angefragt werden müssen. HTTP bietet eine gewisse Anzahl an Standardmethoden(hauptsächlich: \textit{GET, PUT, POST, DELETE}) die auch für den Datentransfer in einer RESTful-API genutzt werden. Eine mögliche Variante mit den entsprechenden HTTP-Befehlen ist in der Tabelle \ref{tab:httptable} zu sehen.
+
+\begin{figure}[ht]\centering
+	\includegraphics[width=8.5 cm]{Abbildungen/RESTful-operations}
+	\caption{Beschreibung der Standard HTTP Methoden in der REST-Architektur. Quelle: http://www.itersdesktop.com/}
+	\label{fig:restCalls}
+\end{figure}
+
+Im Kontext von Web-Services, welche sich an die REST-Vorgaben binden, wird zumeist die Kommunikation über HTTP umgesetzt. Die API wird über eine Basis-URL angesprochen, über welche dann die benötigten Ressourcen angefragt werden müssen. HTTP bietet eine gewisse Anzahl an Standardmethoden(hauptsächlich: \textit{GET, PUT, POST, DELETE}) die auch für den Datentransfer in einer RESTful-API genutzt werden. Die grundlegenden Eigenschafen der Methoden finden sich im Bild \ref{fig:restCalls} Eine mögliche Variante mit den entsprechenden HTTP-Befehlen ist in der Tabelle \ref{tab:httptable} zu sehen.
 
 \begin{table}[hbt]
 	\caption{HTTP Methoden für spezifische URL's}
 	\centering
-	\begin{tabular}{ |p{2cm}|p{6cm}|}
+	\begin{tabular}{ |p{2cm}|p{5.5cm}|}
 		\toprule
 		\cmidrule(r){1-2}
-		URL & \textbf{http://api.example.com/resources/item42}\\
+		URL & \textbf{http://api.example.com/res/item42}\\
 		\midrule
 		GET & Eine Repräsentation des Items42 wird an den Client übertragen\\
 		\midrule
-		PUT & Item42 wird überschrieben oder erstellt wenn noch nicht vorhanden\\
-		\midrule
 		POST & Wird zum Erstellen neuer Ressourcen verwendet, würde in diesem Fall eher nicht genutzt werden\\
+		\midrule
+		PUT & Item42 wird überschrieben oder erstellt wenn noch nicht vorhanden\\
 		\midrule
 		DELETE & Das adressierte Element Item42 wird gelöscht\\
 		\bottomrule
@@ -149,7 +156,7 @@ soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
 
 </soap:Envelope>
 
-------------------------------
+--------------------------------------------
 
  HTTP/1.1 200 OK
 Content-Type: application/soap+xml; charset=utf-8
