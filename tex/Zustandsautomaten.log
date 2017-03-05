@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.3)  1 MAR 2017 17:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.3)  4 MAR 2017 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -906,43 +906,54 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 \tf@toc=\write3
 \openout3 = `Zustandsautomaten.toc'.
 
+ <Abbildungen/REST.png, id=1, 816.04875pt x 427.5975pt>
+File: Abbildungen/REST.png Graphic file (type png)
 
-Overfull \hbox (21.9373pt too wide) in paragraph at lines 97--98
+<use Abbildungen/REST.png>
+Package pdftex.def Info: Abbildungen/REST.png used on input line 99.
+(pdftex.def)             Requested size: 256.0748pt x 134.17848pt.
+
+Overfull \hbox (13.65735pt too wide) in paragraph at lines 99--100
+ [][] 
+ []
+
+
+Overfull \hbox (21.9373pt too wide) in paragraph at lines 97--103
 \OT1/ptm/m/n/10 (-20) Die Auf-bau ak-tu-el-ler Web-Applikationen be-ruht auf de
 r []Uberlegung
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 100.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 105.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Overfull \hbox (3.74536pt too wide) in paragraph at lines 105--106
+ <./Abbildungen/REST.png>]
+Overfull \hbox (3.74536pt too wide) in paragraph at lines 110--111
 \OT1/ptm/m/n/10 (-20) Dieser Schritt ist op-tio-nal und be-schreibt die M[]ogli
 chkeit
  []
 
-<Abbildungen/RESTful-operations.png, id=13, 246.6816pt x 155.1396pt>
+<Abbildungen/RESTful-operations.png, id=16, 246.6816pt x 155.1396pt>
 File: Abbildungen/RESTful-operations.png Graphic file (type png)
 
 <use Abbildungen/RESTful-operations.png>
 Package pdftex.def Info: Abbildungen/RESTful-operations.png used on input line 
-109.
+114.
 (pdftex.def)             Requested size: 241.84842pt x 152.1044pt.
 
-Overfull \hbox (3.00847pt too wide) in paragraph at lines 114--115
+Overfull \hbox (3.00847pt too wide) in paragraph at lines 119--120
 \OT1/ptm/m/n/10 (-20) Vorgaben bin-den, wird zu-meist die Kom-mu-ni-ka-ti-on []
 uber HTTP
  []
 
 [2 <./Abbildungen/RESTful-operations.png>]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 139.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 144.
 
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -953,55 +964,53 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 148.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
  [3] (./Zustandsautomaten.bbl)
-Underfull \hbox (badness 10000) in paragraph at lines 210--213
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
 
  []
 
-[4
-
-]
-Overfull \hbox (5.81622pt too wide) in paragraph at lines 219--220
+[4]
+Overfull \hbox (5.81622pt too wide) in paragraph at lines 224--225
 \OT1/ptm/m/n/10 (-20) Der Um-fang der Aus-ar-bei-tung soll-te 10 Sei-ten nicht 
 []ubersteigen.
  []
 
-<Abbildungen/Baustein.jpg, id=24, 1106.1325pt x 705.63625pt>
+<Abbildungen/Baustein.jpg, id=27, 1106.1325pt x 705.63625pt>
 File: Abbildungen/Baustein.jpg Graphic file (type jpg)
 
 <use Abbildungen/Baustein.jpg>
-Package pdftex.def Info: Abbildungen/Baustein.jpg used on input line 237.
+Package pdftex.def Info: Abbildungen/Baustein.jpg used on input line 242.
 (pdftex.def)             Requested size: 142.26378pt x 90.74535pt.
 
-<Abbildungen/BausteinMultiInterfaces.jpg, id=25, 1040.88875pt x 397.485pt>
+<Abbildungen/BausteinMultiInterfaces.jpg, id=28, 1040.88875pt x 397.485pt>
 File: Abbildungen/BausteinMultiInterfaces.jpg Graphic file (type jpg)
 
 <use Abbildungen/BausteinMultiInterfaces.jpg>
 Package pdftex.def Info: Abbildungen/BausteinMultiInterfaces.jpg used on input 
-line 243.
+line 248.
 (pdftex.def)             Requested size: 500.484pt x 191.11815pt.
 
-<Abbildungen/Schnittstellen.jpg, id=26, 841.1425pt x 623.32875pt>
+<Abbildungen/Schnittstellen.jpg, id=29, 841.1425pt x 623.32875pt>
 File: Abbildungen/Schnittstellen.jpg Graphic file (type jpg)
 
 <use Abbildungen/Schnittstellen.jpg>
-Package pdftex.def Info: Abbildungen/Schnittstellen.jpg used on input line 312.
+Package pdftex.def Info: Abbildungen/Schnittstellen.jpg used on input line 317.
 
 (pdftex.def)             Requested size: 142.26378pt x 105.42233pt.
 
 
 LaTeX Warning: Citation `RobertMartinOOMetrics' on page 5 undefined on input li
-ne 324.
+ne 329.
 
 
 LaTeX Warning: Citation `RobertMartinSOLID' on page 5 undefined on input line 3
-24.
+29.
 
 [5
 
  <./Abbildungen/Baustein.jpg>]
-Overfull \hbox (5.40634pt too wide) in paragraph at lines 341--342
+Overfull \hbox (5.40634pt too wide) in paragraph at lines 346--347
 \OT1/ptm/m/n/10 (-20) Wor-ten zu-sam-men-ge-fasst oder nur Zi-ta-te be-nutzt? P
 r[]asen-
  []
@@ -1018,13 +1027,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10270 strings out of 493013
- 144590 string characters out of 6139317
- 447297 words of memory out of 5000000
- 13362 multiletter control sequences out of 15000+600000
- 65929 words of font info for 255 fonts, out of 8000000 for 9000
+ 10273 strings out of 493013
+ 144683 string characters out of 6139317
+ 405305 words of memory out of 5000000
+ 13367 multiletter control sequences out of 15000+600000
+ 65728 words of font info for 253 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,12n,51p,2723b,1249s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,51p,2723b,1592s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
@@ -1034,10 +1043,10 @@ pe1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhv
 ro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Zustandsautomaten.pdf (7 pages, 300650 bytes).
+Output written on Zustandsautomaten.pdf (7 pages, 315885 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 49685 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 49690 words of extra memory for PDF output out of 51595 (max. 10000000)
 

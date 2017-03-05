@@ -4,9 +4,9 @@
 \contentsline {section}{\numberline {1}REST: State of the art}{1}
 \contentsline {subsection}{\numberline {1.1}Paradigmen und Eigenschaften}{1}
 \contentsline {subsection}{\numberline {1.2}REST vs. SOAP}{2}
-\contentsline {subsection}{\numberline {1.3}Evaluierung}{3}
-\contentsline {section}{\numberline {2}Entwicklungsansatz und Aufbau}{3}
-\contentsline {subsection}{\numberline {2.1}JAX-RS - die Basis f\IeC {\"u}r REST-Services in JAVA}{3}
+\contentsline {subsection}{\numberline {1.3}Evaluierung}{4}
+\contentsline {section}{\numberline {2}Entwicklungsansatz und Aufbau}{4}
+\contentsline {subsection}{\numberline {2.1}JAX-RS - die Basis f\IeC {\"u}r REST-Services in JAVA}{4}
 \contentsline {subsection}{\numberline {2.2}Serverseite Beispielimplementierung}{4}
 \contentsline {subsection}{\numberline {2.3}Clientseite Beispielimplementierung}{4}
 \contentsline {section}{\numberline {3}Frameworks? Microservice-Architektur?}{4}
