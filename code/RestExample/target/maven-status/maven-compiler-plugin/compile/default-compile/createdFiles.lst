@@ -3,3 +3,4 @@ Movie.class
 MainClass.class
 DBUtil.class
 MovieService.class
+MovieServiceImpl.class

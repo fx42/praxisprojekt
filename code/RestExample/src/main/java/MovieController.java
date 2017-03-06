@@ -8,7 +8,7 @@ import java.util.List;
 @Path( "movies" )
 public class MovieController
 {
-    private MovieService movieService = new MovieService();
+    private MovieService movieService = new MovieServiceImpl();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

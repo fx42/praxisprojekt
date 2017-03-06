@@ -2,11 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7410d925-8841-4240-8481-c89f1faf3f34" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/MovieServiceImpl.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../tex/Abbildungen/overview" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../tex/Abbildungen/restcommunication" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MainClass.class" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MovieController.class" afterPath="$PROJECT_DIR$/target/classes/MovieController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MovieService.class" afterPath="$PROJECT_DIR$/target/classes/MovieService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/rest-example-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/rest-example-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.pdf" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.synctex.gz" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.synctex.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestExample.iml" afterPath="$PROJECT_DIR$/RestExample.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MovieController.java" afterPath="$PROJECT_DIR$/src/main/java/MovieController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MovieService.java" afterPath="$PROJECT_DIR$/src/main/java/MovieService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Literatur.bib" afterPath="$PROJECT_DIR$/../../tex/Literatur.bib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.aux" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.aux" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.bbl" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.bbl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.blg" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.blg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.log" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.tex" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.toc" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.toc" />
     </list>
     <ignored path="RestExample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +50,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="-73">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MovieServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -42,8 +83,8 @@
       <file leaf-file-name="MovieService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MovieService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -55,8 +96,8 @@
             <state relative-caret-position="645">
               <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1358#1365#0" expanded="true" />
+                <marker date="1488716539198" expanded="true" signature="2800:3018" ph="{...}" />
+                <marker date="1488716539198" expanded="true" signature="3068:3432" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -67,16 +108,37 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-              <folding />
+              <folding>
+                <element signature="e#266#267#0" expanded="false" />
+                <element signature="e#294#295#0" expanded="false" />
+                <element signature="e#336#337#0" expanded="false" />
+                <element signature="e#370#371#0" expanded="false" />
+                <element signature="e#402#403#0" expanded="false" />
+                <element signature="e#432#433#0" expanded="false" />
+                <element signature="e#476#477#0" expanded="false" />
+                <element signature="e#514#515#0" expanded="false" />
+                <element signature="e#542#543#0" expanded="false" />
+                <element signature="e#569#570#0" expanded="false" />
+                <element signature="e#606#607#0" expanded="false" />
+                <element signature="e#638#639#0" expanded="false" />
+                <element signature="e#670#671#0" expanded="false" />
+                <element signature="e#698#699#0" expanded="false" />
+                <element signature="e#740#741#0" expanded="false" />
+                <element signature="e#774#775#0" expanded="false" />
+                <element signature="e#809#810#0" expanded="false" />
+                <element signature="e#840#841#0" expanded="false" />
+                <element signature="e#888#889#0" expanded="false" />
+                <element signature="e#928#929#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state relative-caret-position="225">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -88,6 +150,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -106,11 +169,12 @@
         <option value="$PROJECT_DIR$/src/main/java/MessageResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/NoDBUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/DBUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MovieService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MovieService.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/MovieController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MovieServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -127,6 +191,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1920" />
     <option name="width" value="1920" />
     <option name="height" value="1056" />
   </component>
@@ -203,28 +268,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RestExample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RestExample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,7 +567,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1056" extended-state="6" />
+    <frame x="1920" y="0" width="1920" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -591,7 +634,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MovieService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MovieServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
@@ -604,8 +647,8 @@
         <state relative-caret-position="630">
           <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1358#1365#0" expanded="true" />
+            <marker date="1488716539198" expanded="true" signature="2800:3018" ph="{...}" />
+            <marker date="1488716539198" expanded="true" signature="3068:3432" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -614,7 +657,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding />
+          <folding>
+            <element signature="e#266#267#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#336#337#0" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#402#403#0" expanded="false" />
+            <element signature="e#432#433#0" expanded="false" />
+            <element signature="e#476#477#0" expanded="false" />
+            <element signature="e#514#515#0" expanded="false" />
+            <element signature="e#542#543#0" expanded="false" />
+            <element signature="e#569#570#0" expanded="false" />
+            <element signature="e#606#607#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#670#671#0" expanded="false" />
+            <element signature="e#698#699#0" expanded="false" />
+            <element signature="e#740#741#0" expanded="false" />
+            <element signature="e#774#775#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#840#841#0" expanded="false" />
+            <element signature="e#888#889#0" expanded="false" />
+            <element signature="e#928#929#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -650,37 +714,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MovieService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DBUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1358#1365#0" expanded="true" />
+            <marker date="1488716539198" expanded="true" signature="2800:3018" ph="{...}" />
+            <marker date="1488716539198" expanded="true" signature="3068:3432" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -689,14 +729,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="e#266#267#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+            <element signature="e#336#337#0" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#402#403#0" expanded="false" />
+            <element signature="e#432#433#0" expanded="false" />
+            <element signature="e#476#477#0" expanded="false" />
+            <element signature="e#514#515#0" expanded="false" />
+            <element signature="e#542#543#0" expanded="false" />
+            <element signature="e#569#570#0" expanded="false" />
+            <element signature="e#606#607#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#670#671#0" expanded="false" />
+            <element signature="e#698#699#0" expanded="false" />
+            <element signature="e#740#741#0" expanded="false" />
+            <element signature="e#774#775#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#840#841#0" expanded="false" />
+            <element signature="e#888#889#0" expanded="false" />
+            <element signature="e#928#929#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MovieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MovieService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MovieServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

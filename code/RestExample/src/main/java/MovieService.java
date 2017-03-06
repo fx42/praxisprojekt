@@ -1,34 +1,16 @@
 import java.util.List;
 
-public class MovieService
+public interface MovieService
 {
-    DBUtil dbUtil = DBUtil.getInstance();
+    //retrieves all movies from db
+    List<Movie> getAllMovies();
 
-    public List<Movie> getAllMovies()
-    {
-        System.out.println("get for all movies is performed");
-        //Here happens the Database interaction
-        return dbUtil.getAllMovies();
-    }
+    //retrieves the specified movie from db
+    Movie getMovieById(long id);
 
-    public Movie getMovieById(long id)
-    {
-        System.out.println("get for movie with id " + id + " is performed");
-        //Here happens the Database interaction
-        return dbUtil.getMovieWithId(id);
-    }
+    //deletes the specified movie from db
+    void deleteMovieById(long id);
 
-    public void deleteMovieById(long id)
-    {
-        System.out.println("delete for movie with id " + id + " is performed");
-        //Here happens the Database interaction
-        dbUtil.deleteMovieWithId(id);
-    }
-
-    public void createMovie(Movie movie)
-    {
-        System.out.println("new movie with id " + movie.getMovieId() + "is created");
-        //Here happens the Database interaction
-        dbUtil.createNewMovie(movie);
-    }
+    //creates a new movie in db
+    void createMovie(Movie movie);
 }
