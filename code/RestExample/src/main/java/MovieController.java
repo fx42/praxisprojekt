@@ -1,7 +1,10 @@
+import com.google.gson.Gson;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.xml.bind.JAXBElement;
 import java.util.List;
 
 @Path( "movies" )
@@ -13,10 +16,10 @@ public class MovieController
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllMovies()
     {
+        Gson gson = new Gson();
         System.out.println("Begin lookup for all movies in database");
         List<Movie> resultList = movieService.getAllMovies();
-        GenericEntity<List<Movie>> entity = new GenericEntity<List<Movie>>(resultList){};
-        return Response.ok(entity).build();
+        return Response.ok(gson.toJson(resultList)).build();
     }
 
     @GET
@@ -24,8 +27,9 @@ public class MovieController
     @Produces(MediaType.APPLICATION_JSON)
     public Response getMovieById(@PathParam("movieId") long movieId)
     {
+        Gson gson = new Gson();
         System.out.println("Begin lookup for movie with id " + movieId + " in database");
-        return Response.ok(movieService.getMovieById(movieId)).build();
+        return Response.ok(gson.toJson(movieService.getMovieById(movieId))).build();
     }
 
     @DELETE
@@ -38,10 +42,15 @@ public class MovieController
     }
 
     @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response createMovie(Movie movie)
+    @Path("{title}/{director}/{genre}/{year}")
+    public Response createMovie(@PathParam("title") String title, @PathParam("director") String director,
+                                @PathParam("genre") String genre, @PathParam("year") int year)
     {
+        Movie movie = new Movie();
+        movie.setTitle(title);
+        movie.setDirector(director);
+        movie.setGenre(genre);
+        movie.setYear(year);
         System.out.println("Create movie with id: " + movie.getMovieId());
         movieService.createMovie(movie);
         return Response.status(Response.Status.CREATED).build();

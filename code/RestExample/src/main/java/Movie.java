@@ -1,19 +1,16 @@
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement
 public class Movie
 {
     private static long unique_id = 0;
-
     private long movieId = ++unique_id;
-
     private String title;
-
     private int year;
-
     private String genre;
-
     private String director;
+
+    public Movie()
+    {
+
+    }
 
     public String getTitle() {
         return title;
