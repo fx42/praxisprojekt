@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.3)  6 MAR 2017 20:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.3)  8 MAR 2017 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -989,17 +989,24 @@ Underfull \vbox (badness 1072) has occurred while \output is active []
 File: Abbildungen/overview.jpg Graphic file (type jpg)
 
 <use Abbildungen/overview.jpg>
-Package pdftex.def Info: Abbildungen/overview.jpg used on input line 197.
+Package pdftex.def Info: Abbildungen/overview.jpg used on input line 193.
 (pdftex.def)             Requested size: 170.71652pt x 333.30775pt.
- [4]
+ [4 <./Abbildungen/overview.jpg>]
 (../code/RestExample/src/main/java/MainClass.java)
-Overfull \hbox (68.20322pt too wide) in paragraph at lines 205--206
+<Abbildungen/getid2.jpg, id=26, 249.37122pt x 154.86429pt>
+File: Abbildungen/getid2.jpg Graphic file (type jpg)
+
+<use Abbildungen/getid2.jpg>
+Package pdftex.def Info: Abbildungen/getid2.jpg used on input line 206.
+(pdftex.def)             Requested size: 241.84842pt x 150.1969pt.
+
+Overfull \hbox (68.20322pt too wide) in paragraph at lines 204--210
 \OT1/ptm/m/n/10 (-20) den Con-trol-ler an-zu-spre-chen lau-tet der Pfad \OT1/pt
 m/b/n/10 http://localhost:8080/rest/movies\OT1/ptm/m/n/10 (-20) .
  []
 
 
-Overfull \hbox (77.90312pt too wide) in paragraph at lines 205--206
+Overfull \hbox (77.90312pt too wide) in paragraph at lines 204--210
 \OT1/ptm/m/n/10 (-20) des Pfa-des n[]otig. So-mit f[]uhrt ein HTTP-GET auf \OT1
 /ptm/m/it/10 (-20) http://localhost:8080/rest/movies
  []
@@ -1007,42 +1014,43 @@ Overfull \hbox (77.90312pt too wide) in paragraph at lines 205--206
 (../code/RestExample/src/main/java/MovieController.java
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
-) [5 <./Abbildungen/overview.jpg>] (../code/RestExample/src/main/java/MovieServ
-ice.java)
-(../code/RestExample/src/main/java/MovieServiceImpl.java) [6]
-(./Zustandsautomaten.bbl)
-Underfull \hbox (badness 10000) in paragraph at lines 238--241
+ [5 <./Abbildungen/getid2.jpg>]) (../code/RestExample/src/main/java/MovieServic
+e.java)
+(../code/RestExample/src/main/java/MovieServiceImpl.java)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+[7] (./Zustandsautomaten.bbl)
+Underfull \hbox (badness 10000) in paragraph at lines 265--268
 
  []
 
-[7
+[8
 
 
 
-] (../code/RestExample/pom.xml
-Underfull \vbox (badness 1708) has occurred while \output is active []
-
- [8
+] (../code/RestExample/pom.xml) [9
 
 
 
-])
-(../code/RestExample/src/main/java/MovieController.java [9])
+]
+(../code/RestExample/src/main/java/MovieController.java) [10]
+(../code/RestExample/src/main/java/DBUtil.java)
 
 AED: lastpage setting LastPage
-[10] (./Zustandsautomaten.aux)
+[11] (./Zustandsautomaten.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10387 strings out of 493013
- 146807 string characters out of 6139317
- 450886 words of memory out of 5000000
- 13470 multiletter control sequences out of 15000+600000
+ 10443 strings out of 493013
+ 147750 string characters out of 6139317
+ 444912 words of memory out of 5000000
+ 13522 multiletter control sequences out of 15000+600000
  61604 words of font info for 243 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,13n,51p,2716b,1844s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,13n,51p,2716b,1818s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.p
@@ -1051,10 +1059,10 @@ fb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf
 w/helvetic/uhvro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 </usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on Zustandsautomaten.pdf (10 pages, 198367 bytes).
+Output written on Zustandsautomaten.pdf (11 pages, 234148 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 50192 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 50197 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -1,8 +1,12 @@
 import com.google.gson.Gson;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.GenericEntity;
+import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.ws.RequestWrapper;
 import java.util.List;
 
 @Path( "movies" )
@@ -40,17 +44,10 @@ public class MovieController
     }
 
     @POST
-    @Path("{title}/{director}/{genre}/{year}")
-    public Response createMovie(@PathParam("title") String title, @PathParam("director") String director,
-                                @PathParam("genre") String genre, @PathParam("year") int year)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response createMovie(Movie movie)
     {
-        Movie movie = new Movie();
-        movie.setTitle(title);
-        movie.setDirector(director);
-        movie.setGenre(genre);
-        movie.setYear(year);
-        System.out.println("Create movie with id: " + movie.getMovieId());
-        movieService.createMovie(movie);
+        System.out.println("Create new movie in database");
         return Response.status(Response.Status.CREATED).build();
     }
 }

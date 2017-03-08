@@ -1,4 +1,6 @@
-public class Movie
+import java.io.Serializable;
+
+public class Movie implements Serializable
 {
     private static long unique_id = 0;
     private long movieId = ++unique_id;

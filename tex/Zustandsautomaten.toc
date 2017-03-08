@@ -8,13 +8,14 @@
 \contentsline {section}{\numberline {2}Entwicklungsansatz und Aufbau}{4}
 \contentsline {subsection}{\numberline {2.1}JAX-RS - die Basis f\IeC {\"u}r REST-Services in Java}{4}
 \contentsline {subsection}{\numberline {2.2}Beschreibung der Beispielapplikation}{4}
-\contentsline {subsection}{\numberline {2.3}Serverseite Beispielimplementierung}{4}
+\contentsline {subsection}{\numberline {2.3}Serverseite Beispielimplementierung}{5}
 \contentsline {subsubsection}{\numberline {2.3.1}MovieController}{5}
 \contentsline {subsubsection}{\numberline {2.3.2}MovieService-Interface}{6}
 \contentsline {subsubsection}{\numberline {2.3.3}MovieService-Implementierung}{6}
-\contentsline {subsection}{\numberline {2.4}Clientseite Beispielimplementierung}{6}
-\contentsline {section}{\numberline {3}Frameworks? Microservice-Architektur?}{6}
-\contentsline {section}{\numberline {4}Zusammenfassung}{6}
-\contentsline {section}{\hspace *{-\tocsep }Literatur}{7}
-\contentsline {section}{\numberline {A}Listings}{8}
+\contentsline {subsubsection}{\numberline {2.3.4}DBUtil}{7}
+\contentsline {subsection}{\numberline {2.4}Clientseite Beispielimplementierung}{7}
+\contentsline {section}{\numberline {3}Frameworks? Microservice-Architektur?}{7}
+\contentsline {section}{\numberline {4}Zusammenfassung}{7}
+\contentsline {section}{\hspace *{-\tocsep }Literatur}{8}
+\contentsline {section}{\numberline {A}Listings}{9}
 \contentsfinish 
