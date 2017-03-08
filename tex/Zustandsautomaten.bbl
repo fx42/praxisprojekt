@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{WSA}
 W3C~Working Group.
@@ -44,5 +44,9 @@ Roy Thomas~Fielding with W3C.
 \newblock Rfc 2616, hypertext transfer protocol --http/1.1, section 10, status
   code definitions.
 \newblock \url{https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html}.
+
+\bibitem{microservice}
+Pattern: Microservice architecture.
+\newblock \url{http://microservices.io/patterns/microservices.html}.
 
 \end{thebibliography}

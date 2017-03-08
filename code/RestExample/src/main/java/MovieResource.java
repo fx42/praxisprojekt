@@ -10,7 +10,7 @@ import javax.xml.ws.RequestWrapper;
 import java.util.List;
 
 @Path( "movies" )
-public class MovieController
+public class MovieResource
 {
     private MovieService movieService = new MovieServiceImpl();
 
@@ -48,6 +48,7 @@ public class MovieController
     public Response createMovie(Movie movie)
     {
         System.out.println("Create new movie in database");
+        movieService.createMovie(movie);
         return Response.status(Response.Status.CREATED).build();
     }
 }

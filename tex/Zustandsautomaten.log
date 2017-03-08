@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.3)  8 MAR 2017 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.3)  8 MAR 2017 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -911,40 +911,31 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 \openout3 = `Zustandsautomaten.toc'.
 
 
-
-LaTeX Warning: Citation `Harel:1987' on page 1 undefined on input line 86.
-
-
-LaTeX Warning: Citation `Harel2006' on page 1 undefined on input line 86.
-
-
-LaTeX Warning: Citation `Gurp99onthe' on page 1 undefined on input line 86.
+Overfull \hbox (4.39551pt too wide) in paragraph at lines 84--85
+\OT1/ptm/m/n/10 (-20) Im-ple-men-tie-rung ei-ner \OT1/ptm/m/it/10 (-20) RESTful
+-API \OT1/ptm/m/n/10 (-20) gew[]ahren. Die Abk[]urzung
+ []
 
 <Abbildungen/restcommunication.jpg, id=1, 472.76625pt x 161.60374pt>
 File: Abbildungen/restcommunication.jpg Graphic file (type jpg)
 
 <use Abbildungen/restcommunication.jpg>
-Package pdftex.def Info: Abbildungen/restcommunication.jpg used on input line 1
-00.
+Package pdftex.def Info: Abbildungen/restcommunication.jpg used on input line 9
+4.
 (pdftex.def)             Requested size: 241.84842pt x 82.67079pt.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 100.
 
-Overfull \hbox (21.9373pt too wide) in paragraph at lines 98--104
-\OT1/ptm/m/n/10 (-20) Die Auf-bau ak-tu-el-ler Web-Applikationen be-ruht auf de
-r []Uberlegung
- []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 106.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./Abbildungen/restcommunication.jpg>]
-Overfull \hbox (3.74536pt too wide) in paragraph at lines 111--112
+]
+Overfull \hbox (3.74536pt too wide) in paragraph at lines 105--106
 \OT1/ptm/m/n/10 (-20) Dieser Schritt ist op-tio-nal und be-schreibt die M[]ogli
 chkeit
  []
@@ -954,22 +945,22 @@ File: Abbildungen/RESTful-operations.png Graphic file (type png)
 
 <use Abbildungen/RESTful-operations.png>
 Package pdftex.def Info: Abbildungen/RESTful-operations.png used on input line 
-114.
+108.
 (pdftex.def)             Requested size: 241.84842pt x 152.1044pt.
 
-Overfull \hbox (3.00847pt too wide) in paragraph at lines 118--119
+Overfull \hbox (3.00847pt too wide) in paragraph at lines 112--113
 \OT1/ptm/m/n/10 (-20) Vorgaben bin-den, wird zu-meist die Kom-mu-ni-ka-ti-on []
 uber HTTP
  []
 
-[2 <./Abbildungen/RESTful-operations.png>]
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+[2 <./Abbildungen/restcommunication.jpg> <./Abbildungen/RESTful-operations.png>
+] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 143.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 137.
 
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -980,89 +971,83 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
-
-Underfull \vbox (badness 1072) has occurred while \output is active []
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 146.
  [3]
 <Abbildungen/overview.jpg, id=22, 231.86626pt x 452.69125pt>
 File: Abbildungen/overview.jpg Graphic file (type jpg)
 
 <use Abbildungen/overview.jpg>
-Package pdftex.def Info: Abbildungen/overview.jpg used on input line 193.
+Package pdftex.def Info: Abbildungen/overview.jpg used on input line 187.
 (pdftex.def)             Requested size: 170.71652pt x 333.30775pt.
- [4 <./Abbildungen/overview.jpg>]
+ [4]
 (../code/RestExample/src/main/java/MainClass.java)
 <Abbildungen/getid2.jpg, id=26, 249.37122pt x 154.86429pt>
 File: Abbildungen/getid2.jpg Graphic file (type jpg)
 
 <use Abbildungen/getid2.jpg>
-Package pdftex.def Info: Abbildungen/getid2.jpg used on input line 206.
+Package pdftex.def Info: Abbildungen/getid2.jpg used on input line 200.
 (pdftex.def)             Requested size: 241.84842pt x 150.1969pt.
 
-Overfull \hbox (68.20322pt too wide) in paragraph at lines 204--210
-\OT1/ptm/m/n/10 (-20) den Con-trol-ler an-zu-spre-chen lau-tet der Pfad \OT1/pt
-m/b/n/10 http://localhost:8080/rest/movies\OT1/ptm/m/n/10 (-20) .
+Overfull \hbox (62.93988pt too wide) in paragraph at lines 198--204
+\OT1/ptm/m/n/10 (-20) Pfa-des n[]otig. So-mit f[]uhrt ein HTTP-GET auf \OT1/ptm
+/m/it/10 (-20) http://localhost:8080/rest/movies
  []
 
-
-Overfull \hbox (77.90312pt too wide) in paragraph at lines 204--210
-\OT1/ptm/m/n/10 (-20) des Pfa-des n[]otig. So-mit f[]uhrt ein HTTP-GET auf \OT1
-/ptm/m/it/10 (-20) http://localhost:8080/rest/movies
- []
-
-(../code/RestExample/src/main/java/MovieController.java
+(../code/RestExample/src/main/java/MovieResource.java [5 <./Abbildungen/overvie
+w.jpg>]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
- [5 <./Abbildungen/getid2.jpg>]) (../code/RestExample/src/main/java/MovieServic
-e.java)
-(../code/RestExample/src/main/java/MovieServiceImpl.java)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+) (../code/RestExample/src/main/java/MovieService.java)
+(../code/RestExample/src/main/java/MovieServiceImpl.java [6 <./Abbildungen/geti
+d2.jpg>])
+<Abbildungen/Microservice_Architecture.png, id=34, 541.02126pt x 371.3875pt>
+File: Abbildungen/Microservice_Architecture.png Graphic file (type png)
 
- [6]
-[7] (./Zustandsautomaten.bbl)
+<use Abbildungen/Microservice_Architecture.png>
+Package pdftex.def Info: Abbildungen/Microservice_Architecture.png used on inpu
+t line 243.
+(pdftex.def)             Requested size: 241.84842pt x 166.01778pt.
+ [7] [8
+
+ <./Abbildungen/Microservice_Architecture.png>] (./Zustandsautomaten.bbl)
 Underfull \hbox (badness 10000) in paragraph at lines 265--268
 
  []
 
-[8
+[9
 
 
 
-] (../code/RestExample/pom.xml) [9
+] (../code/RestExample/pom.xml) [10
 
 
 
 ]
-(../code/RestExample/src/main/java/MovieController.java) [10]
+(../code/RestExample/src/main/java/MovieResource.java) [11]
 (../code/RestExample/src/main/java/DBUtil.java)
 
 AED: lastpage setting LastPage
-[11] (./Zustandsautomaten.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[12] (./Zustandsautomaten.aux) ) 
 Here is how much of TeX's memory you used:
- 10443 strings out of 493013
- 147750 string characters out of 6139317
- 444912 words of memory out of 5000000
- 13522 multiletter control sequences out of 15000+600000
- 61604 words of font info for 243 fonts, out of 8000000 for 9000
+ 10454 strings out of 493013
+ 148027 string characters out of 6139317
+ 445477 words of memory out of 5000000
+ 13526 multiletter control sequences out of 15000+600000
+ 61924 words of font info for 247 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,13n,51p,2716b,1818s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.p
-fb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf
--dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/ur
-w/helvetic/uhvro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-</usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on Zustandsautomaten.pdf (11 pages, 234148 bytes).
+ 43i,13n,51p,2716b,1826s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.
+enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fo
+nts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helveti
+c/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/s
+hare/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-dist/fon
+ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Zustandsautomaten.pdf (12 pages, 286688 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 50197 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 50202 words of extra memory for PDF output out of 51595 (max. 10000000)
 

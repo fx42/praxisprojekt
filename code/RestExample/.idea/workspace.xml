@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7410d925-8841-4240-8481-c89f1faf3f34" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_bundle_1_19.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/MovieController.java" afterPath="$PROJECT_DIR$/src/main/java/MovieResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DBUtil.class" afterPath="$PROJECT_DIR$/target/classes/DBUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MainClass.class" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Movie.class" afterPath="$PROJECT_DIR$/target/classes/Movie.class" />
@@ -10,16 +13,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MovieServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/MovieServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.pdf" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.synctex.gz" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.synctex.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestExample.iml" afterPath="$PROJECT_DIR$/RestExample.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Movie.java" afterPath="$PROJECT_DIR$/src/main/java/Movie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MovieController.java" afterPath="$PROJECT_DIR$/src/main/java/MovieController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.aux" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.aux" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.log" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.tex" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../tex/Zustandsautomaten.toc" afterPath="$PROJECT_DIR$/../../tex/Zustandsautomaten.toc" />
     </list>
     <ignored path="RestExample.iws" />
@@ -43,22 +42,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="557">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MovieController.java">
+      <file leaf-file-name="MovieResource.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MovieResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="662">
+              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,28 +89,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#320#321#0" expanded="false" />
-                <element signature="e#348#349#0" expanded="false" />
-                <element signature="e#390#391#0" expanded="false" />
-                <element signature="e#424#425#0" expanded="false" />
-                <element signature="e#456#457#0" expanded="false" />
-                <element signature="e#486#487#0" expanded="false" />
-                <element signature="e#530#531#0" expanded="false" />
-                <element signature="e#568#569#0" expanded="false" />
-                <element signature="e#596#597#0" expanded="false" />
-                <element signature="e#623#624#0" expanded="false" />
-                <element signature="e#660#661#0" expanded="false" />
-                <element signature="e#692#693#0" expanded="false" />
-                <element signature="e#724#725#0" expanded="false" />
-                <element signature="e#752#753#0" expanded="false" />
-                <element signature="e#794#795#0" expanded="false" />
-                <element signature="e#828#829#0" expanded="false" />
-                <element signature="e#863#864#0" expanded="false" />
-                <element signature="e#894#895#0" expanded="false" />
-                <element signature="e#942#943#0" expanded="false" />
-                <element signature="e#982#983#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,7 +99,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,8 +135,9 @@
         <option value="$PROJECT_DIR$/src/main/java/MovieServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MovieController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/MovieController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MovieResource.java" />
       </list>
     </option>
   </component>
@@ -627,11 +610,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MovieController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MovieResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -655,28 +640,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding>
-            <element signature="e#320#321#0" expanded="false" />
-            <element signature="e#348#349#0" expanded="false" />
-            <element signature="e#390#391#0" expanded="false" />
-            <element signature="e#424#425#0" expanded="false" />
-            <element signature="e#456#457#0" expanded="false" />
-            <element signature="e#486#487#0" expanded="false" />
-            <element signature="e#530#531#0" expanded="false" />
-            <element signature="e#568#569#0" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
-            <element signature="e#623#624#0" expanded="false" />
-            <element signature="e#660#661#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#724#725#0" expanded="false" />
-            <element signature="e#752#753#0" expanded="false" />
-            <element signature="e#794#795#0" expanded="false" />
-            <element signature="e#828#829#0" expanded="false" />
-            <element signature="e#863#864#0" expanded="false" />
-            <element signature="e#894#895#0" expanded="false" />
-            <element signature="e#942#943#0" expanded="false" />
-            <element signature="e#982#983#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +648,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -696,11 +662,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MovieController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MovieResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -708,7 +676,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -716,6 +686,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1065">
           <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -740,28 +718,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#320#321#0" expanded="false" />
-            <element signature="e#348#349#0" expanded="false" />
-            <element signature="e#390#391#0" expanded="false" />
-            <element signature="e#424#425#0" expanded="false" />
-            <element signature="e#456#457#0" expanded="false" />
-            <element signature="e#486#487#0" expanded="false" />
-            <element signature="e#530#531#0" expanded="false" />
-            <element signature="e#568#569#0" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
-            <element signature="e#623#624#0" expanded="false" />
-            <element signature="e#660#661#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#724#725#0" expanded="false" />
-            <element signature="e#752#753#0" expanded="false" />
-            <element signature="e#794#795#0" expanded="false" />
-            <element signature="e#828#829#0" expanded="false" />
-            <element signature="e#863#864#0" expanded="false" />
-            <element signature="e#894#895#0" expanded="false" />
-            <element signature="e#942#943#0" expanded="false" />
-            <element signature="e#982#983#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -769,23 +726,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MovieController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MovieResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="662">
+          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

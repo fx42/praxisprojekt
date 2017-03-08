@@ -59,7 +59,5 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0.pr1" level="project" />
     <orderEntry type="library" name="Maven: com.h2database:h2:1.4.193" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.0" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-bundle:1.19" level="project" />
-    <orderEntry type="library" name="Maven: javax.ws.rs:jsr311-api:1.1.1" level="project" />
   </component>
 </module>
