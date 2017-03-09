@@ -39,12 +39,11 @@
 \usepackage{url} 
 \usepackage{listings}
 
-
 %----------------------------------------------------------------------------------------
 %	ARTICLE INFORMATION
 %----------------------------------------------------------------------------------------
 
-\JournalInfo{Praxisbericht} % Journal information
+\JournalInfo{Bericht zur Praktische Studienphase} % Journal information
 \Archive{Wintersemester 16/17} % Additional notes (e.g. copyright, DOI, review/research article)
 
 \PaperTitle{REpresentational State Transfer - Architekturstil} % Article title
@@ -53,19 +52,22 @@
 \affiliation{\textit{Hochschule Kaiserslautern}} % Author affiliation
 \affiliation{\textbf{Corresponding author}: fesc0013@stud.hs-kl.de} % Corresponding author
 
-\Keywords{Web-Entwicklung, RESTful, SOA, JSON, Design, Java} % Keywords - if you don't want any simply remove all the text between the curly brackets
+\Keywords{Web-Entwicklung, RESTful, SOA, JSON, WSA, SOAP, Java} % Keywords - if you don't want any simply remove all the text between the curly brackets
 \newcommand{\keywordname}{Keywords} % Defines the keywords heading name
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT
 %----------------------------------------------------------------------------------------
+\Abstract{Im Zuge der praktischen Studienphase bei der Bosch Software Innovations GmbH wurden viele Erfahrungen mit Technololgien und praktischen Ansätzen gesammelt. Einer dieser Ansätze ist das Realisieren von Web-Applikationen unter Verwendung des REST-Architekturstils. Was ist REST und wo kommt es zum Einsatz? Behandelt werden in Folgendem die grundlegenden Eigenschaften die eine REST-Schnittstelle als solche auszeichnet und was REST von zum Beispiel SOAP unterscheidet. An einer Beispielimplementierung werden einige der Eigenschaften verdeutlicht und genauer beschrieben.}
 
-\Abstract{Das Abstract ist eine maximal 200 Worte lange Zusammenfassung des Inhalts der Arbeit, so dass sich der Leser vorab ein erstes Bild vom Inhalt machen kann.}
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
+%----------------- ABSTRACT -----------------%
+\include{Abstract/Abstract}
+%----------------- ErklŠrung -----------------%
+\include{Erklaerung/erklaerung}
 \flushbottom % Makes all text pages the same height
 
 \maketitle % Print the title and abstract box
@@ -195,7 +197,7 @@ Ein Überblick über den Aufbau der Applikation findet sich in Abbildung \ref{fi
 Im eben erwähnten Überblick lassen sich einige Information ableiten. Die Applikation exponiert eine Schnittstelle. Über diese kann Informationsaustausch in beide Richtungen stattfinden. Ebenso lässt sich erkennen, dass der \textit{MovieSerivce} als Interface abgebildet ist und die eigentliche Implementierung nachgelagert realisiert wird. In dem Schemata wird das Erstellen des vorab erwähnten HTTP-Servers nicht abgebildet. Da der eingebettete Server von Jersey verwendet wird, fällt die Konfiguration ziemlich gering aus. Die Initialisierung wird in der \textit{MainClass} beim starten der Anwendung direkt mit ausgeführt(vgl. Listing \ref{mainclass.java}). Als Ressourcenkonfiguration wird die MovieResource-Klasse angegeben. Diese enthält die Pfade und Methoden die vom HTTP-Server initialisiert werden sollen, sodass Aufrufe dementsprechend geroutet werden können. Die einzelnen Bestandteile werden in Folgendem im Detail beschrieben.
 \lstinputlisting[language=Java, label=mainclass.java, caption={MainClass: Startklasse der Applikation. Startet HTTP-Server und initialisiert die benötigten REST Resourcen}, emptylines=0, flexiblecolumns=false, firstline=10]{../code/RestExample/src/main/java/MainClass.java}
 \subsubsection{MovieResource}
-Die MovieResource, auch REST-Controller genannt, spiegelt die Schnittstelle programmatisch wider. Für alle Funktionalitäten werden hier die Pfade und die entsprechenden HTTP-Methoden festgelegt. Annotationen wie \textit{@GET} oder \textit{@POST} geben den zu verwendenden HTTP-Aufruf vor. Der Pfad setzt sich aus der Server-URL wie in Listing \ref{mainclass.java} zu sehen, ebenso aus den \textit{@PATH}-Annotationen an der Controller-Klasse sowie den entsprechenden Methoden zusammen. In Listing \ref{controller.java} sind diese Annotationen zu sehen. Um den Controller anzusprechen lautet der Pfad \textbf{http://localhost:8080/rest/movies}. Bei der ersten gelisteten \textit{GET}-Methode ist keine Erweiterung des Pfades nötig. Somit führt ein HTTP-GET auf \textit{http://localhost:8080/rest/movies} dazu, dass eine Anfrage nach allen in der Datenbank befindlichen Filmen gestellt wird. Die zweite Methode trägt die Erweiterung \textit{"movieId"}. Hierbei handelt es sich im einen in der URL codierten Parameter.  Somit liefert ein HTTP-GET auf \textit{http://localhost:8080/rest/movies/2} den Film mit der ID 2 aus der Datenbank, wie auch in Abbildung \ref{fig:responsebrowser} zu sehen, beziehungsweise \textit{null} wenn ein Film mit dieser ID nicht vorhanden wäre. 
+Die MovieResource, auch REST-Controller genannt, spiegelt die Schnittstelle programmatisch wider. Für alle Funktionalitäten werden hier die Pfade und die entsprechenden HTTP-Methoden festgelegt. Annotationen wie \textit{@GET} oder \textit{@POST} geben den zu verwendenden HTTP-Aufruf vor. Der Pfad setzt sich aus der Server-URL wie in Listing \ref{mainclass.java} zu sehen, ebenso aus den \textit{@Path}-Annotationen an der Controller-Klasse sowie den entsprechenden Methoden zusammen. In Listing \ref{controller.java} sind diese Annotationen zu sehen. Um den Controller anzusprechen lautet der Pfad \textbf{http://localhost:8080/rest/movies}. Bei der ersten gelisteten \textit{GET}-Methode ist keine Erweiterung des Pfades nötig. Somit führt ein HTTP-GET auf \textit{http://localhost:8080/rest/movies} dazu, dass eine Anfrage nach allen in der Datenbank befindlichen Filmen gestellt wird. Die zweite Methode trägt die Erweiterung \textit{"movieId"}. Hierbei handelt es sich im einen in der URL codierten Parameter.  Somit liefert ein HTTP-GET auf \textit{http://localhost:8080/rest/movies/2} den Film mit der ID 2 aus der Datenbank, wie auch in Abbildung \ref{fig:responsebrowser} zu sehen, beziehungsweise \textit{null} wenn ein Film mit dieser ID nicht vorhanden wäre. 
 \begin{figure}[ht]\centering
 	\includegraphics[width=8.5 cm]{Abbildungen/getid2.jpg}
 	\caption{Response zum GET-Request auf http://localhost:8080/rest/movies/2}
@@ -205,7 +207,7 @@ Die MovieResource, auch REST-Controller genannt, spiegelt die Schnittstelle prog
 Als Rückgabewert wird in beiden Fällen eine HTTP-Response geliefert. Diese enthält bei einem GET-Request laut dem Standard(vgl .\cite{httpcodes}) den HTTP-Code \textit{200 OK}. Im Body werden die Objekte als Json geliefert. Die Annotation \textit{@Produces} besagt, dass Json als Datenformat verwendet werden soll. Das Gson-Objekt ermöglicht es Java-Objekte in das entsprechende Json-Format zu bringen. Ohne die korrekte Formatierung wäre eine Serialisierung der Objekte nicht möglich und es würde zu Fehlern in der Übertragung kommen. Die Definition der weiteren Methoden können im vollständigen Code des MovieController in Listing \ref{moviecontroller.java} gefunden werden. \\ Somit gilt der Controller nur als Berührungspunkt mit der Außenwelt. Die Funktionalität wird durch den darunter liegenden Service realisiert.
 \subsubsection{MovieService-Interface}
 Der MovieService selbst wurde in diesem Beispiel als Interface implementiert. Durch diese Instanz zwischen Controller und Service-Implementierung wird eine gewissen Stabilität gegenüber dem Controller gewährleistet jedoch kann man die verwendete Implementierung beliebig austauschen sofern die im Interface festgelegten Methoden überschrieben werden. Dadurch ergibt sich eine Flexibilität gegenüber der Service-Implementierung. 
-\lstinputlisting[language=Java, label=serviceinterface.java, caption={MovieService Interface des Movie-Portfolios}, emptylines=0, flexiblecolumns=false]{../code/RestExample/src/main/java/MovieService.java}
+\lstinputlisting[language=Java, label=serviceinterface.java, caption={MovieService Interface des Movie-Portfolios}, emptylines=0, flexiblecolumns=false, firstline=2]{../code/RestExample/src/main/java/MovieService.java}
 In Listing \ref{serviceinterface.java} sind die gewünschten Funktionalitäten abgebildet. Wie es für jede spezielle Anfrage eine exakte URL gibt, wird auch jede Funktionalität mit einer eigenen Implementierung abgedeckt.
 \subsubsection{MovieService-Implementierung}
 Hierbei handelt es sich um die konkrete Implementierung der dem Interface zugrunde liegenden Funktionen. Da diese Beispielanwendung sehr klein gehalten ist, ist die einzige Aufgabe das Lesen und Schreiben der Datenbank. Hierzu wird nur die entsprechende Datenbank-Instanz benötigt. Der Programm-Code findet sich in Listing \ref{serviceimpl.java}.
@@ -245,13 +247,14 @@ Beschrieben wurde der REST Architekturstil. Es wurden grundlegenden Eigenschafte
 	\label{fig:micro}
 \end{figure}
 \subsection{Ausblick}
- Gerade das Nutzen schon vorhandener Dienste birgt ein interessantes Thema. Die Mircoservice-Architektur. Im Zuge dieser wird es sich zum Ziel gemacht, eigenständige Komponenten als unabhängige Services zu implementieren. Somit sollen viele einzelne Dienste entstehen die wiederum in unterschiedlichen Projekten genutzt werden können. Der Datenaustausch findet auch zwischen den einzelnen Services mit REST statt und um die Nutzung eines solchen Dienstes zu beanspruchen muss über die exponierte API kommuniziert werden. Einen kurzen Überblick gibt die Grafik \ref{fig:micro}.
+Gerade das Nutzen schon vorhandener Dienste birgt ein interessantes Thema. Die Mircoservice-Architektur. Im Zuge dieser wird es sich zum Ziel gemacht, eigenständige Komponenten als unabhängige Services zu implementieren und zu deployen. Somit sollen viele einzelne Dienste entstehen die wiederum in unterschiedlichen Projekten und Applikationen genutzt werden können. Der Datenaustausch findet auch zwischen den einzelnen Services mit REST statt und um die Nutzung eines solchen Dienstes zu beanspruchen muss über die exponierte API kommuniziert werden. Einen kurzen Überblick gibt die Grafik \ref{fig:micro}.
 Viele grundlegende Informationen über den Aufbau einer Microservice-Architektur findet man in Quelle \cite{microservice}. 
-\newpage
+
 \clearpage
 \appendix
 \cleardoublepage
 \onecolumn
+\newpage
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
@@ -260,12 +263,6 @@ Viele grundlegende Informationen über den Aufbau einer Microservice-Architektur
 \bibliography{Literatur}
 
 %----------------------------------------------------------------------------------------
-
-\subsubsection*{Erklärung zur Ausarbeitung}
-Hiermit erkläre ich, {\it Vorname Nachname (Matrikel)}, dass ich die vorliegende Ausarbeitung selbstständig und ohne fremde Hilfe angefertigt habe und keine anderen als in der Abhandlung angegebenen Hilfen benutzt habe; dass ich die Übernahme wörtlicher Zitate aus der Literatur sowie die Verwendung der Gedanken anderer Autoren an den entsprechenden Stellen innerhalb der Arbeit gekennzeichnet habe. Ich bin mir bewusst, dass eine falsche Erklärung rechtliche Folgen haben kann.\\ \\
---------------------- \\
-Unterschrift
-
 
 \clearpage
 \appendix
@@ -279,5 +276,5 @@ Unterschrift
 \lstinputlisting[language=JAVA, label=moviecontroller.java, caption={Vollständiger Code des MovieControllers}, emptylines=0, flexiblecolumns=false]{../code/RestExample/src/main/java/MovieResource.java}
 \newpage
 \lstinputlisting[language=JAVA, label=dbutil.java, caption={Auszüge aus der DBUtil Klasse}, emptylines=0, flexiblecolumns=false, linerange={10-36, 47-70, 212-212}]{../code/RestExample/src/main/java/DBUtil.java}
-
+\newpage
 \end{document}

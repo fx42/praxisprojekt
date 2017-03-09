@@ -10,9 +10,7 @@ public class MainClass
 {
     public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException, URISyntaxException
     {
-        System.out.println("Starting Application...");
         ResourceConfig rc = new ResourceConfig(MovieResource.class);
         JdkHttpServerFactory.createHttpServer(new URI("http://localhost:8080/rest"), rc);
-        System.out.println("Application started...");
     }
 }

@@ -1,6 +1,8 @@
 This is BibTeX, Version 0.99d (TeX Live 2016/Arch Linux)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Zustandsautomaten.aux
+A level-1 auxiliary file: Abstract/Abstract.aux
+A level-1 auxiliary file: Erklaerung/erklaerung.aux
 The style file: unsrt.bst
 Database file #1: Literatur.bib
 Warning--entry type for "Fielding:2000" isn't style-file defined
@@ -10,12 +12,9 @@ I was expecting a `,' or a `}'---line 33 of file Literatur.bib
  :  date={September 17, 2009}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Harel:1987"
-Warning--I didn't find a database entry for "Harel2006"
-Warning--I didn't find a database entry for "Gurp99onthe"
 You've used 10 entries,
             1791 wiz_defined-function locations,
-            492 strings with 4933 characters,
+            488 strings with 4919 characters,
 and the built_in function-call counts, 1176 in all, are:
 = -- 93
 > -- 28

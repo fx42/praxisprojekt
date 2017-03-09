@@ -1,21 +1,20 @@
 \select@language {ngerman}
 \select@language {ngerman}
-\contentsline {section}{\hspace *{-\tocsep }Einleitung}{1}
-\contentsline {section}{\numberline {1}REST: State of the art}{1}
-\contentsline {subsection}{\numberline {1.1}Paradigmen und Eigenschaften}{1}
-\contentsline {subsection}{\numberline {1.2}REST vs. SOAP}{2}
-\contentsline {subsection}{\numberline {1.3}Evaluierung}{4}
-\contentsline {section}{\numberline {2}Entwicklungsansatz und Aufbau}{4}
-\contentsline {subsection}{\numberline {2.1}JAX-RS - die Basis f\IeC {\"u}r REST-Services in Java}{4}
-\contentsline {subsection}{\numberline {2.2}Beschreibung der Beispielapplikation}{4}
-\contentsline {subsection}{\numberline {2.3}Serverseite Beispielimplementierung}{5}
-\contentsline {subsubsection}{\numberline {2.3.1}MovieResource}{5}
-\contentsline {subsubsection}{\numberline {2.3.2}MovieService-Interface}{6}
-\contentsline {subsubsection}{\numberline {2.3.3}MovieService-Implementierung}{6}
-\contentsline {subsubsection}{\numberline {2.3.4}DBUtil}{7}
-\contentsline {subsection}{\numberline {2.4}Clientseite Beispielimplementierung}{7}
-\contentsline {section}{\numberline {3}Zusammenfassung}{7}
+\contentsline {section}{\hspace *{-\tocsep }Einleitung}{2}
+\contentsline {section}{\numberline {1}REST: State of the art}{2}
+\contentsline {subsection}{\numberline {1.1}Paradigmen und Eigenschaften}{2}
+\contentsline {subsection}{\numberline {1.2}REST vs. SOAP}{4}
+\contentsline {subsection}{\numberline {1.3}Evaluierung}{5}
+\contentsline {section}{\numberline {2}Entwicklungsansatz und Aufbau}{5}
+\contentsline {subsection}{\numberline {2.1}JAX-RS - die Basis f\IeC {\"u}r REST-Services in Java}{5}
+\contentsline {subsection}{\numberline {2.2}Beschreibung der Beispielapplikation}{5}
+\contentsline {subsection}{\numberline {2.3}Serverseite Beispielimplementierung}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}MovieResource}{6}
+\contentsline {subsubsection}{\numberline {2.3.2}MovieService-Interface}{7}
+\contentsline {subsubsection}{\numberline {2.3.3}MovieService-Implementierung}{7}
+\contentsline {subsubsection}{\numberline {2.3.4}DBUtil}{8}
+\contentsline {subsection}{\numberline {2.4}Clientseite Beispielimplementierung}{8}
+\contentsline {section}{\numberline {3}Zusammenfassung}{8}
 \contentsline {subsection}{\numberline {3.1}Ausblick}{8}
-\contentsline {section}{\hspace *{-\tocsep }Literatur}{9}
-\contentsline {section}{\numberline {A}Listings}{10}
-\contentsfinish 
+\contentsline {section}{\hspace *{-\tocsep }Literatur}{10}
+\contentsline {section}{\numberline {A}Listings}{11}
