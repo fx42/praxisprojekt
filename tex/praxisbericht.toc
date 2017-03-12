@@ -1,0 +1,20 @@
+\select@language {ngerman}
+\select@language {ngerman}
+\contentsline {section}{\hspace *{-\tocsep }Einleitung}{3}{figure.caption.1}
+\contentsline {section}{\numberline {1}REST: State of the art}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Paradigmen und Eigenschaften}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}REST vs. SOAP}{5}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Fazit}{6}{subsection.1.3}
+\contentsline {section}{\numberline {2}Entwicklungsansatz und Aufbau}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}JAX-RS - die Basis f\IeC {\"u}r REST-Services in Java}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Beschreibung der Beispielapplikation}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Serverseite Beispielimplementierung}{7}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}MovieController}{7}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}MovieService-Interface}{8}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}MovieService-Implementierung}{8}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}DBUtil}{8}{subsubsection.2.3.4}
+\contentsline {subsection}{\numberline {2.4}Clientseite Beispielimplementierung}{9}{subsection.2.4}
+\contentsline {section}{\numberline {3}Zusammenfassung}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Ausblick}{10}{subsection.3.1}
+\contentsline {section}{\hspace *{-\tocsep }Literatur}{11}{subsection.3.1}
+\contentsline {section}{\numberline {A}Listings}{12}{appendix.A}

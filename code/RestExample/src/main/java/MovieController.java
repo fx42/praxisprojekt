@@ -6,7 +6,7 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Path( "movies" )
-public class MovieResource
+public class MovieController
 {
     private MovieService movieService = new MovieServiceImpl();
 
